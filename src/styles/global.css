@@ -3,3 +3,28 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
+
+[data-content] {
+  overflow: hidden;
+  transition: max-height 300ms ease, opacity 300ms ease;
+}
+
+[data-animated="false"] [data-content] {
+  transition: none !important;
+}
+
+[data-expanded="false"] [data-content] {
+  opacity: 0;
+}
+
+[data-expanded="true"] [data-content] {
+  opacity: 1;
+}
+
+button[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+button[aria-expanded="false"] .chevron {
+  transform: rotate(0deg);
+}

@@ -28,6 +28,7 @@ export const siteConfig = {
                 "Leading on agentic AI enquiries automation, targetting FTE saving by automating call summarisation, CRM ticket triaging and response drafting.",
                 "Line managing team of 2x Senior Data Scientists and 2x Data Scientists",
                 ],
+            expanded: true
             },
             {
             company: "Department for Education",
