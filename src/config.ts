@@ -9,7 +9,7 @@ export const siteConfig = {
         github: "https://github.com/edwowe99",
     },
     aboutMe:
-        "I'm playing around with astro to make a personal github page. If you've stumbled across this, I hope you have a good day :)",
+        "I'm a Princiapl Data Scientist, leading on innovative applications of GenAI in government. I'm currently working for Department for Education, aiming to deliver savings and improve data quality using Agentic LLMs. I have full stack development skills and outside of work I am currently developing a line-learning app for actors. When not sat behind a computer I can be found playing the piano 🎹 or running 🏃‍♂️.",
     skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
     projects: [    {
       name: "Magic Meals",
@@ -48,6 +48,34 @@ export const siteConfig = {
                 "Transformed a key function of the business by delivering Comparable Selection Tool, a web app that centralised data and streamlined the valuation process",
             ],
             },
+            {
+            company: "University of Bath",
+            title: "Undergraduate Mathematics Tutor",
+            dateRange: "September 2021 - May 2022",
+            bullets: [
+                "Taught python fundamentals to 1st year undergraduate Maths students",
+                ],
+            },
+            {
+            company: "Valuation Office Agency",
+            title: "GORS Placement Analyst",
+            dateRange: "July 2020 - August 2021",
+            bullets: [
+                "Increased address matching for Robotics Automation of Estates evaluation",
+                "VBA solution to triage emails, allocate to agents and automated data flow to a Power BI monitoring dashboard."
+                ],
+            },
+            {
+            company: "Flatmatch",
+            title: "Software Developer",
+            dateRange: "February 2020 - December 2020",
+            bullets: [
+                "Backend and Frontend web development for an early stage proptech startup company",
+                "Integration of Google Maps API, to display walking times to nearby stations and schools",
+                "Designed and implemented an algorithm to match potential tenants based on personality factors"
+                ],
+            },
+
     ],
     education: [
         {
