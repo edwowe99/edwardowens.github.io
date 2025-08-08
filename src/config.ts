@@ -11,7 +11,13 @@ export const siteConfig = {
     aboutMe:
         "I'm playing around with astro to make a personal github page. If you've stumbled across this, I hope you have a good day :)",
     skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
-    projects: [],
+    projects: [    {
+      name: "Magic Meals",
+      description:
+        "Use AI to generate your weekly meal plan, with a quick one line prompt.\n\nA project I worked on to learn how to deploy a website, implement user authentication and  stripe payments.",
+      link: "https://magic-meals.com/",
+      skills: ["OpenAI", "React", "JavaScript", "MUI", "Python", "Django", "Firebase", "Stripe"],
+    },],
     experience: [
         {
             company: "Department for Education",
