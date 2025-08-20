@@ -89,5 +89,11 @@ export const siteConfig = {
         ],
         },
     ],
-   
+    blog: {
+      // Blog config
+        blogTitle: "Blog",
+        blogDescription: "I share my thoughts and write articles on Medium.",
+        blogUrl: "https://medium.com/@edwardowens_75290",
+        blogFeedUrl: "https://medium.com/feed/@edwardowens_75290",
+    }   
 }
