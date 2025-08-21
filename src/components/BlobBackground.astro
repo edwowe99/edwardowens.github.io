@@ -1,0 +1,74 @@
+---
+import { siteConfig } from '../config';
+
+const style = `
+  --accent-color: ${siteConfig.accentColor};
+  --secondary-color: ${siteConfig.secondaryColor};
+  --tertiary-color: ${siteConfig.tertiaryColor};
+`;
+---
+
+<div class="blob-container" style={style}>
+  <div class="blob blob1 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] top-[-150px] left-[-150px]"></div>
+  <div class="blob blob2 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] top-[700px] right-[-100px]"></div>
+  <div class="blob blob3 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[500px] md:h-[500px] top-[2500px] left-[-100px]"></div>
+</div>
+
+<style global>
+.blob-container {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(160px);
+  opacity: 0.5;
+  animation: drift 50s ease-in-out infinite alternate,
+             morph 30s ease-in-out infinite alternate,
+             colorShift 40s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+}
+
+.blob1 {
+  background: var(--accent-color);
+  animation-duration: 55s, 28s, 60s;
+}
+
+.blob2 {
+  background: radial-gradient(circle at center, var(--secondary-color), var(--tertiary-color));
+  animation-duration: 65s, 35s, 75s;
+}
+
+.blob3 {
+  background: radial-gradient(circle at center, var(--accent-color), var(--secondary-color));
+  animation-duration: 75s, 40s, 78s;
+  opacity: 0.35;
+}
+
+@keyframes drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(250px, -200px) scale(1.15); }
+  50%  { transform: translate(-300px, 250px) scale(0.9); }
+  75%  { transform: translate(200px, 180px) scale(1.05); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes morph {
+  0%   { border-radius: 50% 50% 50% 50%; }
+  25%  { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; }
+  50%  { border-radius: 55% 45% 65% 35% / 40% 55% 60% 45%; }
+  75%  { border-radius: 70% 30% 50% 50% / 60% 35% 65% 40%; }
+  100% { border-radius: 50% 50% 50% 50%; }
+}
+
+@keyframes colorShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
