@@ -3,6 +3,8 @@ export const siteConfig = {
     title: "Principal AI Data Scientist & Full Stack developer",
     description: "Portfolio website of Edward Owens",
     accentColor: "#1d4ed8",
+    secondaryColor: "#ec4899", // pink-500
+    tertiaryColor: "#f59e0b",  // amber-500
     social: {
         email: "edwowe99@gmail.com",
         linkedin: "https://www.linkedin.com/in/edward-p-owens/",
